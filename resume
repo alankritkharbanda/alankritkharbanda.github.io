@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script>
-    window.onload = function() {
-      window.location.href = "https://www.alankritkharbanda.com/resume";
-    };
-  </script>
+
 </head>
 <body>
 <p>Redirecting to alankritkharbanda.com...</p>
+ <script>
+
+      window.location.href = "https://www.alankritkharbanda.com/resume";
+
+  </script>
 </body>
 </html>
