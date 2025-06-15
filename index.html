@@ -1,13 +1,323 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alankrit Kharbanda - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Light background */
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e0e0e0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
 </head>
-<body>
-<p>Redirecting to alankritkharbanda.com...</p>
-<script>
-  window.location.href = "http://www.alankritkharbanda.com/resume";
+<body class="antialiased text-gray-800">
+    <div class="flex flex-col min-h-screen">
+        <!-- Header Section -->
+        <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg py-6 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between">
+                <div class="text-center sm:text-left mb-4 sm:mb-0">
+                    <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-1">Alankrit Kharbanda</h1>
+                    <p class="text-xl sm:text-2xl font-light opacity-90">Technical Lead at Google Cloud Platform</p>
+                    <p class="text-md opacity-80 mt-1">Seattle, Washington, United States | 6 Patent filings, 2 Publications</p>
+                </div>
+                <div class="flex space-x-4 flex-wrap justify-center sm:justify-start mt-4 sm:mt-0">
+                    <a href="https://www.linkedin.com/in/alankritkharbanda" target="_blank" rel="noopener noreferrer" class="bg-white text-blue-700 hover:bg-gray-100 px-4 py-2 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105 flex items-center mb-2 sm:mb-0">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 110-4 2 2 0 010 4z" />
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <!-- Resume Link -->
+                    <a href="your_resume.pdf" target="_blank" rel="noopener noreferrer" class="bg-white text-green-700 hover:bg-gray-100 px-4 py-2 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105 flex items-center mb-2 sm:mb-0">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                        Resume
+                    </a>
+                    <!-- Google Scholar Link -->
+                    <a href="https://scholar.google.com/scholar?as_sdt=7,48&q=alankrit+kharbanda&hl=en" target="_blank" rel="noopener noreferrer" class="bg-white text-red-700 hover:bg-gray-100 px-4 py-2 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105 flex items-center">
+                         <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.5 7.5L12 2l9.5 5.5L12 13l-9.5-5.5zM12 14.5l-9.5-5.5L12 20l9.5-5.5L12 14.5z"/>
+                        </svg>
+                        Google Scholar
+                    </a>
+                </div>
+            </div>
+        </header>
 
-</script>
+        <!-- Main Content Area -->
+        <main class="flex-grow container mx-auto px-4 py-8 sm:px-6 lg:px-8 max-w-4xl">
+
+            <!-- About Section -->
+            <section id="about" class="bg-white rounded-lg shadow-md p-6 mb-8">
+                <h2 class="text-3xl font-bold text-blue-700 mb-4 border-b-2 border-blue-200 pb-2">About</h2>
+                <p class="text-lg leading-relaxed text-gray-700">
+                    Alankrit Kharbanda is a highly accomplished Technical Lead with extensive experience in designing, leading, and implementing large-scale distributed systems and cloud platforms. Currently a Technical Lead at Google Cloud Platform, he has a proven track record in driving critical migrations, building scalable services, and innovating object storage solutions. With a strong background in a diverse set of technologies, he is recognized for his leadership, problem-solving abilities, and commitment to delivering impactful technical solutions, evidenced by his multiple patent filings and publications.
+                </p>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="bg-white rounded-lg shadow-md p-6 mb-8">
+                <h2 class="text-3xl font-bold text-blue-700 mb-4 border-b-2 border-blue-200 pb-2">Experience</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <!-- Google Experience Tile -->
+                    <div class="border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-1">Technical Lead</h3>
+                        <p class="text-lg text-gray-600 mb-1">Google</p>
+                        <p class="text-md text-gray-500">August 2021-Present</p>
+                        <p class="text-md text-gray-500">Seattle, Washington, United States</p>
+                        <p class="text-md text-gray-700 mt-2">Team: Transfer Service (Trusted Partner Cloud/AI Sovereign Cloud, Distributed Cloud Hosted)</p>
+                    </div>
+
+                    <!-- Amazon Experience Tile -->
+                    <div class="border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-1">Software Engineer</h3>
+                        <p class="text-lg text-gray-600 mb-1">Amazon</p>
+                        <p class="text-md text-gray-500">April 2018-August 2021</p>
+                        <p class="text-md text-gray-500">Seattle/Bangalore</p>
+                        <p class="text-md text-gray-700 mt-2">Focus: Advertising Platform, Transportation Financial Ledger</p>
+                    </div>
+
+                    <!-- Directi (Media.net) Experience Tile -->
+                    <div class="border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-1">Software Developer</h3>
+                        <p class="text-lg text-gray-600 mb-1">Directi (Media.net)</p>
+                        <p class="text-md text-gray-500">October 2015-February 2018</p>
+                        <p class="text-md text-gray-500">Bengaluru Area, India</p>
+                        <p class="text-md text-gray-700 mt-2">Team: AdExchange and Video Ad Serving</p>
+                    </div>
+
+                    <!-- Fraport AG Experience Tile -->
+                    <div class="border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-1">Consultant</h3>
+                        <p class="text-lg text-gray-600 mb-1">Fraport AG</p>
+                        <p class="text-md text-gray-500">August 2015-October 2015</p>
+                        <p class="text-md text-gray-500">Frankfurt Area, Germany</p>
+                        <p class="text-md text-gray-700 mt-2">Focus: Emerging Markets Customer Requirements</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="bg-white rounded-lg shadow-md p-6 mb-8">
+                <h2 class="text-3xl font-bold text-blue-700 mb-4 border-b-2 border-blue-200 pb-2">Education</h2>
+                <div class="mb-6">
+                    <h3 class="text-2xl font-semibold text-gray-800">Bachelor of Engineering (B.E.), Computer Science</h3>
+                    <p class="text-lg text-gray-600">BITS Pilani | 2011-2015</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-2xl font-semibold text-gray-800">Improv Comedy</h3>
+                    <p class="text-lg text-gray-600">The Improv School at Unexpected Productions | 2020-2022</p>
+                </div>
+            </section>
+
+            <!-- Areas of Expertise Section -->
+            <section id="expertise" class="bg-white rounded-lg shadow-md p-6 mb-8">
+                <h2 class="text-3xl font-bold text-blue-700 mb-4 border-b-2 border-blue-200 pb-2">Areas of Expertise</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-center">
+                    <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Cloud Platforms & Distributed Systems</h3>
+                        <p class="text-gray-700 text-sm">AWS, GCP, Azure, Docker, Kubernetes (K8s), Kafka, High Scale Architecture, System Design, Microservices, Cloud Security, Serverless Architectures</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Programming & Backend Development</h3>
+                        <p class="text-gray-700 text-sm">Java, GoLang, Python, C/C++, JavaScript, Node.js, Express.js, Django, API Development, RESTful Services</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Data Management & Analytics</h3>
+                        <p class="text-gray-700 text-sm">Cassandra, Redis, Memcache, MySQL, DynamoDB, MongoDB, PostgreSQL, Big Data (Hadoop, MapReduce, Storm), Data Pipelines, ETL</p>
+                    </div>
+                     <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Web Technologies & Frontend</h3>
+                        <p class="text-gray-700 text-sm">React, HTML5, CSS3, Tailwind CSS, Responsive Design, UI/UX Principles</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">DevOps & Operational Excellence</h3>
+                        <p class="text-gray-700 text-sm">Git, CI/CD, Debugging, Load Testing, Monitoring, Alerting, Observability, Infrastructure Provisioning, Configuration Management</p>
+                    </div>
+                     <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Leadership & Strategy</h3>
+                        <p class="text-gray-700 text-sm">Technical Leadership, Cross-functional Leadership, Product Strategy, Program Management, Mentorship, Team Building, Operational Process Establishment, Innovation, Patents</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section (Core Skills) -->
+            <section id="skills" class="bg-white rounded-lg shadow-md p-6 mb-8">
+                <h2 class="text-3xl font-bold text-blue-700 mb-4 border-b-2 border-blue-200 pb-2">Core Skills</h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1.5 rounded-full shadow-sm">Java</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1.5 rounded-full shadow-sm">GoLang</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1.5 rounded-full shadow-sm">Python</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1.5 rounded-full shadow-sm">JavaScript</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1.5 rounded-full shadow-sm">C/C++</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1.5 rounded-full shadow-sm">AWS</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1.5 rounded-full shadow-sm">GCP</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1.5 rounded-full shadow-sm">Kubernetes</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1.5 rounded-full shadow-sm">Docker</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1.5 rounded-full shadow-sm">Distributed Systems</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1.5 rounded-full shadow-sm">System Design</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1.5 rounded-full shadow-sm">React</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1.5 rounded-full shadow-sm">Databases</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1.5 rounded-full shadow-sm">Technical Leadership</span>
+                </div>
+            </section>
+
+            <!-- Projects Section (Simplified) -->
+            <section id="projects" class="bg-white rounded-lg shadow-md p-6 mb-8">
+                <h2 class="text-3xl font-bold text-blue-700 mb-4 border-b-2 border-blue-200 pb-2">Key Contributions & Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Cloud Data Transfer</h3>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded-full">GCP</span>
+                            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded-full">Distributed Systems</span>
+                            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded-full">Security</span>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=nxwLi_xuHeE" class="text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200" target="_blank" rel="noopener noreferrer">
+                            View Tech Talk &rarr;
+                        </a>
+                      <a href="https://cloud.google.com/storage-transfer-service" class="text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200" target="_blank" rel="noopener noreferrer">
+                            GCP Storage Transfer Service &rarr;
+                        </a>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Scaling Prime Video : Native AWS Migration</h3>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded-full">AWS</span>
+                            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded-full">Cloud Architecture</span>
+                            
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Object Storage in K8s cloud</h3>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded-full">Kubernetes</span>
+                            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded-full">Cloud Storage</span>
+                        </div>
+                        <a href="https://cloud.google.com/distributed-cloud/hosted/docs/latest/gdch/platform/pa-user/create-storage-buckets" class="text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200" target="_blank" rel="noopener noreferrer">
+                            Service docs &rarr;
+                        </a>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Automated Ad-Serving Testing</h3>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded-full">Automation</span>
+                            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded-full">AdTech</span>
+                        </div>
+                        <a href="https://cloud.google.com/distributed-cloud/hosted/docs/latest/gdch/platform/pa-user/transfer-data" class="text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200" target="_blank" rel="noopener noreferrer">
+                            Service Docs &rarr;
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+<!--             <section id="contact" class="bg-white rounded-lg shadow-md p-6 mb-8">
+                <h2 class="text-3xl font-bold text-blue-700 mb-4 border-b-2 border-blue-200 pb-2">Contact Me</h2>
+                <form id="contactForm" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Your Email</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="5" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full inline-flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300 ease-in-out transform hover:scale-105">
+                            Send Message
+                        </button>
+                    </div>
+                    <div id="formMessage" class="mt-4 text-center text-sm font-medium"></div>
+                </form>
+            </section> -->
+
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="bg-gray-800 text-white py-6 px-4 sm:px-6 lg:px-8 mt-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="text-sm">© <span id="current-year"></span> Alankrit Kharbanda. All rights reserved.</p>
+                <div class="flex justify-center space-x-4 mt-3">
+                    <a href="https://www.linkedin.com/in/alankritkharbanda" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors duration-200">LinkedIn</a>
+                    <a href="your_resume.pdf" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors duration-200">Resume</a>
+                    <a href="https://scholar.google.com/scholar?as_sdt=7,48&q=alankrit+kharbanda&hl=en" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors duration-200">Google Scholar</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Set the current year dynamically in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Handle contact form submission
+        document.getElementById('contactForm').addEventListener('submit', async function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const form = event.target;
+            const formData = new FormData(form);
+            const formMessage = document.getElementById('formMessage');
+            const submitButton = form.querySelector('button[type="submit"]');
+
+            // Show loading state
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+            formMessage.textContent = ''; // Clear previous messages
+            formMessage.className = 'mt-4 text-center text-sm font-medium'; // Reset class
+
+            try {
+                // Send form data to the PHP script
+                const response = await fetch('send_email.php', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json(); // Parse JSON response
+
+                if (result.success) {
+                    formMessage.textContent = 'Message sent successfully!';
+                    formMessage.classList.add('text-green-600');
+                    form.reset(); // Clear form fields on success
+                } else {
+                    formMessage.textContent = result.message || 'Failed to send message. Please try again.';
+                    formMessage.classList.add('text-red-600');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                formMessage.textContent = 'An error occurred. Please try again later.';
+                formMessage.classList.add('text-red-600');
+            } finally {
+                submitButton.disabled = false;
+                submitButton.textContent = 'Send Message';
+            }
+        });
+    </script>
 </body>
 </html>
